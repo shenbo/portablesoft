@@ -1,0 +1,16 @@
+{
+    "version": "1.7.21566",
+    "description": "Highly customizable media player",
+    "homepage": "https://github.com/shenbo/portablesoft",    
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/shenbo/portablesoft/releases/download/v1.7.21566/Pot_Player64_1.7.21566_Public_20211123.7z",
+            "shortcuts": [
+                [
+                    "PotPlayerMini64.exe",
+                    "PotPlayer"
+                ]
+            ]
+        }
+    }
+}

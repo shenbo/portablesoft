@@ -1,0 +1,18 @@
+{
+    "version": "v11.10.6.6_x64",
+    "description": "File Synchronization and Backup Software",
+    "homepage": "https://github.com/shenbo/portablesoft",    
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/shenbo/portablesoft/releases/download/v11.10.6.6/GoodSync_Pro_v11.10.6.6_x64.7z",
+            "bin": ["x64\\GoodSync2Go.exe"],
+            "shortcuts": [
+                [
+                    "x64\\GoodSync2Go.exe",
+                    "GoodSync"
+                ]
+            ],
+            "extract_dir": "GoodSync"
+        }
+    }
+}

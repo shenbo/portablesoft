@@ -1,0 +1,18 @@
+{
+    "version": "v1.6",
+    "description": "Microsoft-Activation-Scripts",
+    "homepage": "https://github.com/massgravel/Microsoft-Activation-Scripts",    
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/shenbo/portablesoft/releases/download/v1.6/MAS_1.6.7z",
+            "bin": ["All-In-One-Version\\MAS_AIO.cmd"],
+            "shortcuts": [
+                [
+                    "All-In-One-Version\\MAS_AIO.cmd",
+                    "MAS_AIO"
+                ]
+            ],
+            "extract_dir": "mas"
+        }
+    }
+}

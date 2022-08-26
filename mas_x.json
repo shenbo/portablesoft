@@ -11,8 +11,7 @@
                     "All-In-One-Version\\MAS_AIO.cmd",
                     "MAS_AIO"
                 ]
-            ],
-            "extract_dir": "mas"
+            ]
         }
     }
 }

@@ -1,0 +1,51 @@
+{
+    "version": "2.3.3",
+    "description": ["Nerd Fonts patched 'JetBrainsMono' Font family."],
+    "homepage": "https://github.com/ryanoasis/nerd-fonts",
+    "license": "MIT",
+    "url": [
+        "https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/JetBrainsMono/Ligatures/Regular/complete/JetBrains%20Mono%20Nerd%20Font%20Complete%20Mono%20Windows%20Compatible%20Regular.ttf",
+        "https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/JetBrainsMono/Ligatures/Italic/complete/JetBrains%20Mono%20Nerd%20Font%20Complete%20Mono%20Windows%20Compatible%20Italic.ttf",
+        "https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/JetBrainsMono/Ligatures/Bold/complete/JetBrains%20Mono%20Nerd%20Font%20Complete%20Mono%20Windows%20Compatible%20Bold.ttf"
+    ],
+    "hash":[
+        "bdfe688a0854d8b1e37811e28423cc7c7ad07ca34d2be6cbae8a21980abc87c0",
+        "e66a6bef054615913008fad8b631e8ce75299f0beda61fbff8c049118a520e08",
+        "d5c61ae21a9073dee9adc946b23920fd991cba47cff01a903b9065ff48401607"
+    ],
+    "installer": {
+        "script": [
+            "Write-Host \"Rename fonts file ...\" -Foreground Magenta",
+            "Get-ChildItem \"$dir\" -Filter \"*.ttf\" | ForEach-Object {",
+            "    Write-host \" *\" $_.FullName",
+            "    $newFullName = $_.FullName.Replace(\"%20Mono%20Nerd%20Font%20Complete%20Mono%20Windows%20Compatible%20\", \"Mono-NFM-\")",
+            "    Rename-Item -Force $_.FullName $newFullName",                
+            "}",
+            "$fontInstallDir = \"$env:LOCALAPPDATA\\Microsoft\\Windows\\Fonts\"",
+            "$registryKey = \"HKCU:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts\"",
+            "Write-host \"Installing fonts for current user\" -Foreground Magenta",
+            "Write-host \"- Move *.ttf to \" $fontInstallDir",
+            "Write-host \"- Add registryKey to \" $registryKey",                
+            "Get-ChildItem \"$dir\" -Filter \"*.ttf\" | ForEach-Object {",                
+            "    write-host \" *\" $_.FullName -Foreground Yellow",
+            "    Copy-Item $_.FullName -Destination $fontInstallDir -Force",
+            "    New-ItemProperty -Path $registryKey -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Value $fontInstallDir\\$($_.Name) -Force",
+            "}"
+        ]     
+    },
+    "uninstaller": {
+        "script": [
+            "$fontInstallDir = \"$env:LOCALAPPDATA\\Microsoft\\Windows\\Fonts\"",
+            "$registryKey = \"HKCU:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts\"",
+            "Get-ChildItem $dir -Filter 'JetBrainsMono-NFM-*.ttf' | ForEach-Object {",
+            "    Remove-ItemProperty -Path $registryKey -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Force -ErrorAction SilentlyContinue",
+            "    Remove-Item \"$fontInstallDir\\$($_.Name)\" -Force -ErrorAction SilentlyContinue",
+            "}",
+            "Write-Host \"The Font family has been uninstalled and will not be present after restarting your computer.\" -Foreground Magenta"
+        ]
+    },
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/ryanoasis/nerd-fonts/releases/download/v$version/JetBrainsMono.zip"
+    }
+}

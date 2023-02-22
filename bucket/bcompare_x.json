@@ -1,0 +1,19 @@
+{
+    "version": "4.4.4.27058",
+    "description": "Directory and file compare functions in one package",
+    "homepage": "https://github.com/shenbo/portablesoft", 
+    "notes": "Add Beyond Compare as a context menu option by running: '$dir\\_add_to_context.bat'",   
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/shenbo/portablesoft/releases/download/v4.4.4.27058/Beyond_Compare_4.4.4.27058_64bit.7z",
+            "bin": ["BCompare.exe"],
+            "shortcuts": [
+                [
+                    "BCompare.exe",
+                    "BCompare"
+                ]
+            ],
+            "extract_dir": "BCompare"
+        }
+    }
+}

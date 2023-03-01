@@ -1,5 +1,5 @@
 {
-    "version": "0.1.5.3-beta",
+    "version": "v0.1.5.3-beta",
     "description": "Cross-Platform, modern and powerful stream downloader for MPD/M3U8/ISM",
     "homepage": "https://github.com/nilaoda/N_m3u8DL-RE",
     "license": "MIT",

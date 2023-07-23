@@ -1,0 +1,14 @@
+{
+    "version": "0.1",
+    "description": "caj2pdf: 将知网caj文件转换为pdf",
+    "homepage": "https://github.com/shenbo/caj2pdf/", 
+    "notes": "Add caj2pdf as a context menu option by running: '$dir\\caj2pdf_add_to_context.reg'",   
+    "url": "https://github.com/shenbo/caj2pdf_x/releases/download/0.1/caj2pdf_x_v0.1.zip",
+    "bin": [""],
+    "checkver": {
+        "github": "https://github.com/shenbo/caj2pdf_x"
+    },
+    "autoupdate": {
+        "url": "https://github.com/shenbo/caj2pdf_x/releases/download/$version/caj2pdf_x_v$version.zip"
+    }
+}

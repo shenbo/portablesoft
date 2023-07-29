@@ -2,7 +2,7 @@
     "version": "1.7",
     "description": "Microsoft-Activation-Scripts https://massgrave.dev",
     "homepage": "https://github.com/massgravel/Microsoft-Activation-Scripts",
-    "url": "https://github.com/massgravel/Microsoft-Activation-Scripts/releases/download/1.7/MAS_1.7_Password_1234.7z",
+    "url": "https://github.com/massgravel/Microsoft-Activation-Scripts/releases/download/1.7/MAS_1.7_Password_1234.7z#dl.7z_",
     "hash": "852946f630a25b46f9fcbf34b777f57aacfe10036ba0d7e9e919385c510c212e",
     "bin": "All-In-One-Version\\MAS_AIO.cmd",
     "shortcuts": [
@@ -11,7 +11,15 @@
             "MAS_AIO"
         ]
     ],
-    "pre_install": "Expand-7zipArchive \"$dir\\$fname\" -Switches '-p1234' -ExtractDir \"MAS_$version\" -Removal",
+    "pre_install":[
+        "$zip=(Get-ChildItem $dir\\MAS_*).Name",
+        "7z x $dir\\$zip -p1234 $('-o' + $dir) | Out-Null",
+        "Move-Item $dir\\MAS_$version\\* $dir"
+    ],
+    "post_install": [
+        "Remove-Item $dir\\*dl.7z_ -Force",
+        "Remove-Item $dir\\MAS_$version -Force -Recurse"
+    ],
     "checkver": {
         "github": "https://github.com/massgravel/Microsoft-Activation-Scripts"
     },

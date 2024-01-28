@@ -4,7 +4,7 @@
     "homepage": "https://github.com/massgravel/Microsoft-Activation-Scripts",
     "url": "https://github.com/massgravel/Microsoft-Activation-Scripts/archive/refs/heads/master.zip",
     "notes": "- Run with:  '$dir\\All-In-One-Version\\MAS_AIO.cmd'",
-    "hash": "cd8cd102c79d7dfa9eb83eeb485bc2f163e4aab16f54705712e4b342a302aaa3",
+    "hash": "03c131348540be1f489820f440b5e71f5e5464262cea6bdf894be029f73306dc",
     "bin": "All-In-One-Version\\MAS_AIO.cmd",
     "shortcuts": [
         [

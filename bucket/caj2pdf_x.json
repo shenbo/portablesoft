@@ -7,6 +7,7 @@
         "- Add caj2pdf as a context menu option: '$dir\\caj2pdf_add_to_context.reg'"
     ],
     "url": "https://github.com/shenbo/caj2pdf_x/releases/download/0.1/caj2pdf_x_v0.1.zip",
+    "hash": "3b90f817e16ee50786989855de23d2ef45bb2b2bf2b5b63f63b25fa59b9a452a",
     "bin": "",
     "checkver": {
         "github": "https://github.com/shenbo/caj2pdf_x"

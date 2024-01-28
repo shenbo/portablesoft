@@ -4,6 +4,7 @@
     "homepage": "https://www.dwgtool.com/",
     "notes": "Add CAD Converter as a context menu option by running: '$dir\\add_to_context.reg'",
     "url": "https://github.com/shenbo/portablesoft/releases/download/v8.10.0.1526/Acme_CAD_Converter_8.10.01526.7z",
+    "hash": "9c609c974adbc8d73382abf5ad9dd1ed29d7c32eed74958e0ba3863839408af0",
     "bin": "AcmeCADConverter.exe",
     "shortcuts": [
         [

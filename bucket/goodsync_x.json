@@ -5,6 +5,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/shenbo/portablesoft/releases/download/12.0.7.7_x64/GoodSync_12.0.7.7_64bit_Portable.7z",
+            "hash": "",
             "bin": "x64\\GoodSync2Go.exe",
             "shortcuts": [
                 [

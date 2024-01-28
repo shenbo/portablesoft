@@ -6,6 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/shenbo/portablesoft/releases/download/v4.4.4.27058/Beyond_Compare_4.4.4.27058_64bit.7z",
+            "hash": "",
             "bin": "BCompare.exe",
             "shortcuts": [
                 [

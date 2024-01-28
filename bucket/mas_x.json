@@ -12,7 +12,7 @@
             "MAS_AIO"
         ]
     ],
-    "extract_dir": "Microsoft-Activation-Scripts-$version\\MAS",
+    "extract_dir": "Microsoft-Activation-Scripts-master\\MAS",
     "checkver": {
         "github": "https://github.com/massgravel/Microsoft-Activation-Scripts"
     },

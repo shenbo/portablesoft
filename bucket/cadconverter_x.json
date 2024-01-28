@@ -1,10 +1,10 @@
 {
     "version": "8.10.0.1526",
     "description": "DWG TOOL Software aims at developing high efficient and easy to use Raster to Vector converter and DWG conversion software.",
-    "homepage": "https://www.dwgtool.com/", 
-    "notes": "Add CAD Converter as a context menu option by running: '$dir\\add_to_context.reg'",   
+    "homepage": "https://www.dwgtool.com/",
+    "notes": "Add CAD Converter as a context menu option by running: '$dir\\add_to_context.reg'",
     "url": "https://github.com/shenbo/portablesoft/releases/download/v8.10.0.1526/Acme_CAD_Converter_8.10.01526.7z",
-    "bin": ["AcmeCADConverter.exe"],
+    "bin": "AcmeCADConverter.exe",
     "shortcuts": [
         [
             "AcmeCADConverter.exe",

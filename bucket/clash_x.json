@@ -1,0 +1,14 @@
+{
+    "version": "0.20.39",
+    "description": "Clash for Windows.",
+    "homepage": "https://www.clash.la/releases/",
+    "url": "https://down.clash.la/cfw/0.20.39/Clash.for.Windows-0.20.39-win.7z",
+    "hash": "",
+    "bin": "Clash for Windows.exe",
+    "shortcuts": [
+        [
+            "Clash for Windows.exe",
+            "Clash for Windows"
+        ]
+    ]
+}

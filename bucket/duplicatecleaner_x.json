@@ -1,0 +1,15 @@
+{
+    "version": "4.1.0.4",
+    "description": "Duplicate Cleaner Pro",
+    "homepage": "https://www.duplicatecleaner.com/",
+    "url": "https://github.com/shenbo/portablesoft/releases/download/v4.1.0.4/Duplicate.Cleaner.Pro_4.1.0.4.7z",
+    "hash": "b5858994f26e4ba7f0607ef608b907c4998024f4f8a6979eabba6253bd2ed5e8",
+    "bin": "DuplicateCleaner.exe",
+    "shortcuts": [
+        [
+            "DuplicateCleaner.exe",
+            "DuplicateCleaner"
+        ]        
+    ],
+    "extract_dir": "Duplicate Cleaner Pro_4.1.0.4"
+}

@@ -2,7 +2,6 @@ https://github.com/ScoopInstaller/Scoop/wiki/App-Manifest-Autoupdate
 
 ### Beyond Compare
 > https://www.scootersoftware.com/
-
 - https://www.ghxi.com/beyondcompare.html v4.4.7
 
 ### Acme CADConverter
@@ -10,14 +9,19 @@ https://github.com/ScoopInstaller/Scoop/wiki/App-Manifest-Autoupdate
 
 ### caj2pdf
 > https://github.com/caj2pdf/caj2pdf/
-
 - https://github.com/shenbo/caj2pdf/
 
 ### Clash for Windows
 
 > https://www.clash.la/releases/
-
 - https://down.clash.la/cfw/0.20.39/Clash.for.Windows-0.20.39-win.7z    v0.20.39
+
+### Duplicate Cleaner Pro
+> https://www.duplicatecleaner.com/
+- https://www.ghxi.com/duplicatecleaner.html    v4.1.0.4
+
+### Ghelper
+> "https://ghelper.app" v3.2.5
 
 ### GoodSync
 > https://www.goodsync.com/  v12

@@ -1,0 +1,14 @@
+{
+    "version": "3.2.5",
+    "description": "google helper for windows",
+    "homepage": "https://ghelper.app",
+    "url": "https://ghelper.app/download/Ghelper-v3.2.5-win.zip",
+    "hash": "1d6760677fbb6cdcdc92d2f61ffbfc65e78c84aeb2ed683d7052df8e4eba468e",
+    "bin": "Ghelper3/Ghelper.exe",
+    "shortcuts": [
+        [
+            "Ghelper3/Ghelper.exe",
+            "Ghelper"
+        ]
+    ]
+}

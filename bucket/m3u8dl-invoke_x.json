@@ -1,0 +1,17 @@
+{
+    "version": "0.9.0",
+    "description": "use for cat-catch extension of chrome/edge for invoking new version of m3u8dl-re",
+    "homepage": "https://github.com/corbamico/m3u8dl-invoke/",  
+    "url": "https://github.com/corbamico/m3u8dl-invoke/releases/download/v0.9.0/m3u8dl-invoke.zip",
+    "notes": [
+        "Register m3u8 Url Protocol, running: ",
+        "    reg add \"HKCR\\m3u8dl\\shell\\open\\command\" /ve /t REG_SZ /d \"C:\\Users\\bo\\scoop\\shims\\m3u8dl-invoke.exe %1\" /f"
+    ],
+    "bin": "m3u8dl-invoke.exe",
+    "shortcuts": [
+        [
+            "m3u8dl-invoke.exe",
+            "m3u8dl-invoke"
+        ]
+    ]
+}

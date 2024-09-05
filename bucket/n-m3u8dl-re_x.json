@@ -9,6 +9,9 @@
             "ffmpeg-nightly"
         ]
     },
+    "notes": [
+        "Register 'm3u8dl://' Url Protocol, https://github.com/xifangczy/URLProtocol"
+    ],
     "url": "https://github.com/nilaoda/N_m3u8DL-RE/releases/download/v0.2.1-beta/N_m3u8DL-RE_Beta_win-x64_20240828.zip",
     "hash": "34d574f29119a9b20f7752a9decf7bb1273ad42cdd7dcea034a48f522e913b94",
     "bin": [

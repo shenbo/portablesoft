@@ -1,19 +1,19 @@
 {
-    "version": "2.6",
+    "version": "2.7",
     "description": "Microsoft-Activation-Scripts https://massgrave.dev",
     "homepage": "https://github.com/massgravel/Microsoft-Activation-Scripts",
-    "url": "https://github.com/massgravel/Microsoft-Activation-Scripts/archive/refs/tags/2.6.zip",
+    "url": "https://github.com/massgravel/Microsoft-Activation-Scripts/archive/refs/heads/master.zip",
     "notes": [
         "Method 1 - PowerShell cmd (Recommended), run: ",
         "    irm https://massgrave.dev/get | iex ",
         "",
         "Method 2 - Traditional, run: ",
-        "    $dir\\All-In-One-Version\\MAS_AIO.cmd "
+        "    $dir\\All-In-One-Version-KL\\MAS_AIO.cmd "
     ],
-    "bin": "All-In-One-Version\\MAS_AIO.cmd",
+    "bin": "All-In-One-Version-KL\\MAS_AIO.cmd",
     "shortcuts": [
         [
-            "All-In-One-Version\\MAS_AIO.cmd",
+            "All-In-One-Version-KL\\MAS_AIO.cmd",
             "MAS_AIO"
         ]
     ],

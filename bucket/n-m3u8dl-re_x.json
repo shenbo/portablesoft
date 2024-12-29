@@ -1,5 +1,5 @@
 {
-    "version": "v0.2.1-beta",
+    "version": "v0.3.0-beta",
     "description": "Cross-Platform, modern and powerful stream downloader for MPD/M3U8/ISM",
     "homepage": "https://github.com/nilaoda/N_m3u8DL-RE",
     "license": "MIT",
@@ -10,12 +10,13 @@
         ]
     },
     "notes": [
-        "Register 'm3u8dl://' Url Protocol, https://github.com/xifangczy/URLProtocol"
+        "Register 'm3u8dl://' Url Protocol, https://github.com/xifangczy/URLProtocol",
+        "https://github.com/nilaoda/N_m3u8DL-RE/releases/download/v0.3.0-beta/N_m3u8DL-RE_v0.3.0-beta_win-arm64_20241203.zip"
     ],
-    "url": "https://github.com/nilaoda/N_m3u8DL-RE/releases/download/v0.2.1-beta/N_m3u8DL-RE_Beta_win-x64_20240828.zip",
-    "hash": "34d574f29119a9b20f7752a9decf7bb1273ad42cdd7dcea034a48f522e913b94",
+    "url": "https://github.com/nilaoda/N_m3u8DL-RE/releases/download/v0.3.0-beta/N_m3u8DL-RE_v0.3.0-beta_win-arm64_20241203.zip",
+    "hash": "",
     "bin": [
-        "N_m3u8DL-RE_Beta_win-x64/N_m3u8DL-RE.exe",
+        "N_m3u8DL-RE.exe",
         [
             "N_m3u8DL-RE.exe",
             "N_m3u8DL_RE"
@@ -23,10 +24,10 @@
     ],
     "checkver": {
         "url": "https://api.github.com/repos/nilaoda/N_m3u8DL-RE/releases",
-        "regex": "releases/download/(?<tag>[vV]?[\\w-.]+)/N_m3u8DL-RE_Beta_win-x64_(?<date>[\\d.-]+).zip",
+        "regex": "releases/download/(?<tag>[vV]?[\\w-.]+)/N_m3u8DL-RE_([vV]?[\\w-.]+)_win-arm64_(?<date>[\\d.-]+).zip",
         "replace": "${tag}"
     },
     "autoupdate": {
-        "url": "https://github.com/nilaoda/N_m3u8DL-RE/releases/download/$matchTag/N_m3u8DL-RE_Beta_win-x64_$matchDate.zip"
+        "url": "https://github.com/nilaoda/N_m3u8DL-RE/releases/download/$matchTag/N_m3u8DL-RE_$matchTag_win-arm64_$matchDate.zip"
     }
 }

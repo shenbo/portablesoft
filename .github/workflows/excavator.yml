@@ -1,17 +1,18 @@
 on:
   workflow_dispatch:
   schedule:
-    # run every week
-    - cron: '30 0 * * 3'
+    # run every week 
+    # cron: 'm  h  D  M  W'
+    - cron: '30 0 * * 1'
 name: Excavator
 jobs:
   excavate:
     name: Excavate
     runs-on: windows-latest
     steps:
-    - uses: actions/checkout@main
-    - name: Excavate
-      uses: ScoopInstaller/GithubActions@main
-      env:
-        GITHUB_TOKEN: ${{ secrets.GHTK }}
-        SKIP_UPDATED: '1'
+      - uses: actions/checkout@main
+      - name: Excavate
+        uses: ScoopInstaller/GithubActions@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GHTK }}
+          SKIP_UPDATED: 1

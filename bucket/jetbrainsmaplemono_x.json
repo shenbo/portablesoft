@@ -1,0 +1,46 @@
+{
+    "version": "1.2304.70",
+    "description": "JetBrains Maple Mono: The free and open-source font fused with JetBrains Mono & Maple Mono",
+    "homepage": "https://github.com/SpaceTimee/Fusion-JetBrainsMapleMono",
+    "license": "MIT",
+    "url": "https://github.com/SpaceTimee/Fusion-JetBrainsMapleMono/releases/download/1.2304.70/JetBrainsMapleMono-NF-XX-XX.zip",
+    "notes": [
+        "JetBrainsMapleMono-[NF/XX]-[NR/XX]-[HT/XX].zip ",
+        "- NF: Nerd Font",
+        "- NR: CN Narrow",
+        "- HT: Hinted",
+        "",
+        "vscode config: 'Jetbrains Maple Mono', 'Courier New', monospace "
+    ],
+    "hash": "",
+    "installer": {
+        "script": [
+            "Write-Host \"Rename fonts file ...\" -Foreground Magenta",
+            "$fontInstallDir = \"$env:LOCALAPPDATA\\Microsoft\\Windows\\Fonts\"",
+            "$registryKey = \"HKCU:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts\"",
+            "Write-host \"Installing fonts for current user\" -Foreground Magenta",
+            "Write-host \"- Move *.ttf to \" $fontInstallDir",
+            "Write-host \"- Add registryKey to \" $registryKey",
+            "Get-ChildItem \"$dir\" -Filter \"JetBrainsMapleMono-*.ttf\" | ForEach-Object {",
+            "    write-host \" *\" $_.FullName -Foreground Yellow",
+            "    Copy-Item $_.FullName -Destination $fontInstallDir -Force",
+            "    New-ItemProperty -Path $registryKey -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Value $fontInstallDir\\$($_.Name) -Force",
+            "}"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "$fontInstallDir = \"$env:LOCALAPPDATA\\Microsoft\\Windows\\Fonts\"",
+            "$registryKey = \"HKCU:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts\"",
+            "Get-ChildItem $dir -Filter 'JetBrainsMapleMono-*.ttf' | ForEach-Object {",
+            "    Remove-ItemProperty -Path $registryKey -Name $_.Name.Replace($_.Extension, ' (TrueType)') -Force -ErrorAction SilentlyContinue",
+            "    Remove-Item \"$fontInstallDir\\$($_.Name)\" -Force -ErrorAction SilentlyContinue",
+            "}",
+            "Write-Host \"The Font family has been uninstalled and will not be present after restarting your computer.\" -Foreground Magenta"
+        ]
+    },
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/SpaceTimee/Fusion-JetBrainsMapleMono/releases/download/$version/JetBrainsMapleMono-NF-XX-XX.zip"
+    }
+}

@@ -1,8 +1,8 @@
 {
-    "version": "1.9.6",
+    "version": "1.9.8",
     "description": "PDF scientific paper translation with preserved formats",
     "homepage": "https://github.com/Byaidu/PDFMathTranslate/",
-    "url": "https://github.com/Byaidu/PDFMathTranslate/releases/download/v1.9.6/pdf2zh-v1.9.6-win64.zip",
+    "url": "https://github.com/Byaidu/PDFMathTranslate/releases/download/v1.9.8/pdf2zh-v1.9.8-win64.zip",
     "notes": [
         "The version without assets:  pdf2zh without assets(font, model, etc.)",
         "It will also dynamically download resources when running, but the download may fail due to network issues."
@@ -14,10 +14,13 @@
             "pdf2zh"
         ]
     ],
-    "hash": "",
+    "hash": "2489cfc1dfa5779cca6a264bfed1085fbf43ff1db54c9be8bce47c7b2400a0a5",
     "extract_dir": "pdf2zh/build",
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/Byaidu/PDFMathTranslate/releases/download/v$version/pdf2zh-v$version-win64.zip"
+        "url": "https://github.com/Byaidu/PDFMathTranslate/releases/download/v$version/pdf2zh-v$version-win64.zip",
+        "hash": {
+            "url": ""
+        }
     }
 }

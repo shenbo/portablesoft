@@ -8,7 +8,7 @@
         "It will also dynamically download resources when running, but the download may fail due to network issues.",
         "",
         "Add context menu option: ",
-        "    reg add \"HKEY_CLASSES_ROOT\\SystemFileAssociations\\.pdf\\shell\\pdf2zh\\command\" /ve /d \"$dir\\pdf2zh.exe -s bing --babeldoc %1\" /f",
+        "    reg add \"HKEY_CLASSES_ROOT\\SystemFileAssociations\\.pdf\\shell\\pdf2zh\\command\" /ve /d '$dir\\pdf2zh.exe -s bing --babeldoc \\\"%1\\\"' /f",
         ""
     ],
     "bin": "pdf2zh.exe",

@@ -1,0 +1,21 @@
+{
+    "version": "0.2",
+    "description": "caj2pdf: 将知网caj文件转换为pdf",
+    "homepage": "https://github.com/shenbo/caj2pdf/",
+    "notes": [
+        "Use caj2pdf :   caj2pdf convert *.caj ",
+        "",
+        "Add context menu option: ",
+        "    reg add \"HKEY_CLASSES_ROOT\\SystemFileAssociations\\.caj\\shell\\caj2pdf\\command /ve /d \"$dir\\caj2pdf.exe convert %1\" /f",
+        ""
+    ],
+    "url": "https://github.com/shenbo/caj2pdf/releases/download/v0.2/caj2pdf_v0.2.7z",
+    "hash": "sha256:5e3b797f5a26b33d2e9b1b5090f9057883f6021313398b5aff39bd7df37fc4e6",
+    "bin": "caj2pdf.exe",
+    "checkver": {
+        "github": "https://github.com/shenbo/caj2pdf"
+    },
+    "autoupdate": {
+        "url": "https://github.com/shenbo/caj2pdf/releases/download/$version/caj2pdf_$version.7z"
+    }
+}

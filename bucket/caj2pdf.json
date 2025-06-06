@@ -6,7 +6,7 @@
         "Use caj2pdf :   caj2pdf convert *.caj ",
         "",
         "Add context menu option: ",
-        "    reg add \"HKEY_CLASSES_ROOT\\SystemFileAssociations\\.caj\\shell\\caj2pdf\\command /ve /d \"$dir\\caj2pdf.exe convert %1\" /f",
+        "    reg add \"HKEY_CLASSES_ROOT\\SystemFileAssociations\\.caj\\shell\\caj2pdf\\command\" /ve /d \"$dir\\caj2pdf.exe convert %1\" /f",
         ""
     ],
     "url": "https://github.com/shenbo/caj2pdf/releases/download/v0.2/caj2pdf_v0.2.7z",

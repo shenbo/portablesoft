@@ -5,7 +5,11 @@
     "url": "https://github.com/Byaidu/PDFMathTranslate/releases/download/v1.9.9/pdf2zh-v1.9.9-win64.zip",
     "notes": [
         "The version without assets:  pdf2zh without assets(font, model, etc.)",
-        "It will also dynamically download resources when running, but the download may fail due to network issues."
+        "It will also dynamically download resources when running, but the download may fail due to network issues.",
+        "",
+        "Add context menu option: ",
+        "    reg add \"HKEY_CLASSES_ROOT\\SystemFileAssociations\\.pdf\\shell\\pdf2zh\\command\" /ve /d \"$dir\\pdf2zh.exe -s bing --babeldoc %1\" /f",
+        ""
     ],
     "bin": "pdf2zh.exe",
     "shortcuts": [

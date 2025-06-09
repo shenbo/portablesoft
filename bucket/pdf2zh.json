@@ -1,14 +1,14 @@
 {
-    "version": "1.9.10",
+    "version": "2.0.7",
     "description": "PDF scientific paper translation with preserved formats",
-    "homepage": "https://github.com/Byaidu/PDFMathTranslate/",
-    "url": "https://github.com/Byaidu/PDFMathTranslate/releases/download/v1.9.10/pdf2zh-v1.9.10-win64.zip",
+    "homepage": "https://github.com/PDFMathTranslate/PDFMathTranslate-next/",
+    "url": "https://github.com/PDFMathTranslate/PDFMathTranslate-next/releases/download/v2.0.7/pdf2zh-v2.0.7-BabelDOC-v0.3.66-win64.zip",
     "notes": [
         "The version without assets:  pdf2zh without assets(font, model, etc.)",
         "It will also dynamically download resources when running, but the download may fail due to network issues.",
         "",
         "Add context menu option: ",
-        "    reg add \"HKEY_CLASSES_ROOT\\SystemFileAssociations\\.pdf\\shell\\pdf2zh\\command\" /ve /d '$dir\\pdf2zh.exe -s bing --babeldoc \\\"%1\\\"' /f",
+        "    reg add \"HKEY_CLASSES_ROOT\\SystemFileAssociations\\.pdf\\shell\\pdf2zh\\command\" /ve /d '$dir\\pdf2zh.exe --bing --no-mono \\\"%1\\\"' /f",
         ""
     ],
     "bin": "pdf2zh.exe",
@@ -18,11 +18,11 @@
             "pdf2zh"
         ]
     ],
-    "hash": "7734672825bbca65cf9c829841f3f46e11b407979289008767d5c4d1739b86d8",
-    "extract_dir": "pdf2zh/build",
+    "hash": "fcbc065ae4c8e50b70f1d0c966b56c00ef7828901abc9d39199b2505e1f873fc",
+    "extract_dir": "pdf2zh",
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/Byaidu/PDFMathTranslate/releases/download/v$version/pdf2zh-v$version-win64.zip",
+        "url": "https://github.com/PDFMathTranslate/PDFMathTranslate-next/releases/download/v$version/pdf2zh-v$version-BabelDOC-v0.3.66-win64.zip",
         "hash": {
             "url": ""
         }

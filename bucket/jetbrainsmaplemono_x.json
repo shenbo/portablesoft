@@ -12,7 +12,7 @@
         "",
         "vscode config: 'Jetbrains Maple Mono', 'Courier New', monospace "
     ],
-    "hash": "7c71c304dce9aafb9d2a5709874b3dfcce2ca4f45e62970b1c81fa2b626e9c25",
+    "hash": "",
     "installer": {
         "script": [
             "Write-Host \"Rename fonts file ...\" -Foreground Magenta",

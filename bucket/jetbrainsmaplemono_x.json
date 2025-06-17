@@ -41,9 +41,6 @@
     },
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/SpaceTimee/Fusion-JetBrainsMapleMono/releases/download/$version/JetBrainsMapleMono-NF-XX-XX.zip",
-        "hash": {
-            "url": "https://api.github.com/repos/SpaceTimee/Fusion-JetBrainsMapleMono/releases/tags/$version"
-        }
+        "url": "https://github.com/SpaceTimee/Fusion-JetBrainsMapleMono/releases/download/$version/JetBrainsMapleMono-NF-XX-XX.zip"
     }
 }

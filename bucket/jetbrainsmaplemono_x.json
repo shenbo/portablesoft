@@ -12,7 +12,7 @@
         "",
         "vscode config: 'Jetbrains Maple Mono', 'Courier New', monospace "
     ],
-    "hash": "7c71c304dce9aafb9d2a5709874b3dfcce2ca4f45e62970b1c81fa2b626e9c25",
+    "hash": "d5d4d5c7ffec3df6b03e1e120231c66a4f2e5af31bbfae80f982e8808bf60009",
     "installer": {
         "script": [
             "Write-Host \"Rename fonts file ...\" -Foreground Magenta",
@@ -41,6 +41,10 @@
     },
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/SpaceTimee/Fusion-JetBrainsMapleMono/releases/download/$version/JetBrainsMapleMono-NF-XX-XX.zip"
+        "url": "https://github.com/SpaceTimee/Fusion-JetBrainsMapleMono/releases/download/$version/JetBrainsMapleMono-NF-XX-XX.zip",
+        "hash": {
+            "url": "https://api.github.com/repos/SpaceTimee/Fusion-JetBrainsMapleMono/releases/tags/$version",
+            "jsonpath": "$.assets[?(@.name == 'JetBrainsMapleMono-NF-XX-XX.zip')].digest"
+        }
     }
 }

@@ -1,9 +1,9 @@
 {
-    "version": "1.2304.73",
+    "version": "1.2304.74",
     "description": "JetBrains Maple Mono: The free and open-source font fused with JetBrains Mono & Maple Mono",
     "homepage": "https://github.com/SpaceTimee/Fusion-JetBrainsMapleMono",
     "license": "MIT",
-    "url": "https://github.com/SpaceTimee/Fusion-JetBrainsMapleMono/releases/download/1.2304.73/JetBrainsMapleMono-NF-XX-XX.zip",
+    "url": "https://github.com/SpaceTimee/Fusion-JetBrainsMapleMono/releases/download/1.2304.74/JetBrainsMapleMono-NF-XX-XX.zip",
     "notes": [
         "JetBrainsMapleMono-[NF/XX]-[NR/XX]-[HT/XX].zip ",
         "- NF: Nerd Font",
@@ -12,7 +12,7 @@
         "",
         "vscode config: 'Jetbrains Maple Mono', 'Courier New', monospace "
     ],
-    "hash": "d5d4d5c7ffec3df6b03e1e120231c66a4f2e5af31bbfae80f982e8808bf60009",
+    "hash": "f0c9ce299c299811ca2509e3cad8de38b6f07ed331e0db964b586538480e339f",
     "installer": {
         "script": [
             "Write-Host \"Rename fonts file ...\" -Foreground Magenta",

@@ -1,8 +1,8 @@
 {
-    "version": "9.0.3",
+    "version": "9.0.4",
     "description": "DWSIM is a  CAPE-OPEN compliant Chemical Process Simulator and has an easy-to-use graphical interface with many features previously available only in commercial chemical process simulators. https://dwsim.org/",
     "homepage": "https://github.com/DanWBR/dwsim/",
-    "url": "https://github.com/DanWBR/dwsim/releases/download/v9.0.3/DWSIM_v903_win64_portable.7z",
+    "url": "https://github.com/DanWBR/dwsim/releases/download/v9.0.4/DWSIM_v904_win64_portable.7z",
     "notes": "   https://github.com/DanWBR/dwsim/releases/",
     "bin": "DWSIM.exe",
     "shortcuts": [
@@ -11,7 +11,7 @@
             "DWSIM"
         ]
     ],
-    "hash": "4960ab17562077469dad1a92aa941fbacafc9c74249f2abf3d13eaac0338b3a2",
+    "hash": "3a2afccf887018882c4ca3e6779d39e24c1040ef3bf6606c48ea179964258f87",
     "extract_dir": "Windows",
     "checkver": "github",
     "autoupdate": {

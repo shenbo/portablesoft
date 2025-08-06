@@ -1,8 +1,8 @@
 {
-    "version": "2.4.0",
+    "version": "2.4.1",
     "description": "PDF scientific paper translation with preserved formats",
     "homepage": "https://github.com/PDFMathTranslate/PDFMathTranslate-next/",
-    "url": "https://github.com/PDFMathTranslate/PDFMathTranslate-next/releases/download/v2.4.0/pdf2zh-v2.4.0-BabelDOC-v0.4.19-win64.zip",
+    "url": "https://github.com/PDFMathTranslate/PDFMathTranslate-next/releases/download/v2.4.1/pdf2zh-v2.4.1-BabelDOC-v0.4.21-win64.zip",
     "notes": [
         "The version without assets:  pdf2zh without assets(font, model, etc.)",
         "It will also dynamically download resources when running, but the download may fail due to network issues.",
@@ -18,7 +18,7 @@
             "pdf2zh"
         ]
     ],
-    "hash": "b6edc0d21ea28029da1450427dc0d03858ef91d89f454f76913149de3ebc26e0",
+    "hash": "c1407361ba67abe92d7ae8d725409ee463ed8cf6364693230e54ebc5c5da6f48",
     "extract_dir": "pdf2zh",
     "checkver": {
         "url": "https://api.github.com/repos/PDFMathTranslate/PDFMathTranslate-next/releases/latest",

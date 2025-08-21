@@ -1,0 +1,48 @@
+{
+    "version": "2.1.11",
+    "description": "MinerU: A high-quality tool for convert PDF to Markdown and JSON.",
+    "homepage": "https://github.com/opendatalab/MinerU",
+    "url": "https://github.com/opendatalab/MinerU/archive/refs/tags/mineru-2.1.11-released.zip",
+    "notes": [
+        "- home: https://github.com/opendatalab/MinerU ",        
+        "- help: mineru -h ",        
+        "- model: mineru-models-download -s modelscope -m pipeline ",
+        "- model path: ~\\.cache\\modelscope\\hub\\models ",
+        "- model config: ~\\mineru.json ",
+        "- usage: mineru -d cpu --source local -o . -p 123.pdf "
+    ],
+    "installer": {
+        "script": [
+            "Write-Host \"`n*** create Python venv by uv ... \" -Foreground Blue ",
+            "uv venv \"$dir\\venv\" ",
+            "Write-Host \"*** activate venv ... \" -Foreground Blue ",
+            "Invoke-Expression -Command \"$dir\\venv\\Scripts\\activate.ps1\" ",
+            "Write-Host \"*** uv pip install MinerU ... \" -Foreground Blue",
+            "uv pip install \"mineru[core]\" -i https://pypi.mirrors.ustc.edu.cn/simple ",
+            "Write-Host \"*** mineru --help ... \" -Foreground Blue "
+        ]
+    },
+    "bin": [
+        "venv\\Scripts\\mineru.exe",
+        "venv\\Scripts\\mineru-models-download.exe"
+    ],
+    "shortcuts": [
+        [
+            "venv\\Scripts\\mineru.exe",
+            "pdfrenamer"
+        ],
+        [
+            "venv\\Scripts\\mineru-models-download.exe",
+            "pdfrenamer"
+        ]
+    ],
+    "hash": "",
+    "checkver": {
+        "url": "https://api.github.com/repos/opendatalab/MinerU/releases/latest",
+        "jsonpath": "$.tag_name",
+        "regex": "mineru-(?<version>[\\d.]+)-released"
+    },
+    "autoupdate": {
+        "url": "https://github.com/opendatalab/MinerU/archive/refs/tags/mineru-$version-released.zip"
+    }
+}

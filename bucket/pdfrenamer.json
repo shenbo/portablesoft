@@ -1,0 +1,32 @@
+{
+    "version": "1.1",
+    "description": "pdfrenamer is a CLI tool to automatically rename the pdf files of a scientific paper",
+    "homepage": "https://github.com/MicheleCotrufo/pdf-renamer",
+    "url": "https://github.com/MicheleCotrufo/pdf-renamer/archive/refs/tags/v1.1.zip",
+    "notes": [
+        "- home: https://github.com/MicheleCotrufo/pdf-renamer"
+    ],
+    "installer": {
+        "script": [
+            "Write-Host \"`n*** create Python venv by uv ... \" -Foreground Blue ",
+            "uv venv \"$dir\\venv\" ",
+            "Write-Host \"*** activate venv ... \" -Foreground Blue ",
+            "Invoke-Expression -Command \"$dir\\venv\\Scripts\\activate.ps1\" ",
+            "Write-Host \"*** uv pip install pdf-renamer ... \" -Foreground Blue ",
+            "uv pip install pdf-renamer -i https://pypi.mirrors.ustc.edu.cn/simple ",
+            "Write-Host \"*** pdf-renamer --help ... \" -Foreground Blue "
+        ]
+    },
+    "bin": "venv\\Scripts\\pdfrenamer.exe",
+    "shortcuts": [
+        [
+            "venv\\Scripts\\pdfrenamer.exe",
+            "pdfrenamer"
+        ]
+    ],
+    "hash": "",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/MicheleCotrufo/pdf-renamer/archive/refs/tags/v$version.zip"
+    }
+}

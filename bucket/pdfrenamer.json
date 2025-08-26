@@ -4,7 +4,9 @@
     "homepage": "https://github.com/MicheleCotrufo/pdf-renamer",
     "url": "https://github.com/MicheleCotrufo/pdf-renamer/archive/refs/tags/v1.1.zip",
     "notes": [
-        "- home: https://github.com/MicheleCotrufo/pdf-renamer"
+        "https://github.com/MicheleCotrufo/pdf-renamer",
+        "pdfrenamer 'path/to/target' -f \"{YYYY} - {Aetal} - {J} - {T}\"",
+        "- reg add \"HKEY_CLASSES_ROOT\\SystemFileAssociations\\.pdf\\shell\\pdf_rename\\command\" /ve /d '$dir\\pdfrenamer.exe \\\"%1\\\" -f \"{YYYY}, {Aetal}, {T}\"' /f"
     ],
     "installer": {
         "script": [

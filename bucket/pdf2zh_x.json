@@ -7,8 +7,8 @@
         "The version without assets:  pdf2zh without assets(font, model, etc.)",
         "It will also dynamically download resources when running`n",
         "Add context menu option: ",
-        "- reg add \"HKEY_CLASSES_ROOT\\SystemFileAssociations\\.pdf\\shell\\pdf2zh_bing\\command\" /ve /d '$dir\\pdf2zh.exe --bing --no-mono \\\"%1\\\"' /f",
-        "- reg add \"HKEY_CLASSES_ROOT\\SystemFileAssociations\\.pdf\\shell\\pdf2zh_google\\command\" /ve /d '$dir\\pdf2zh.exe --google --no-mono \\\"%1\\\"' /f"
+        "- reg add \"HKEY_CLASSES_ROOT\\SystemFileAssociations\\.pdf\\shell\\pdf2zh_bing\\command\" /ve /d '$dir\\venv\\Scripts\\pdf2zh.exe --bing --no-mono \\\"%1\\\"' /f",
+        "- reg add \"HKEY_CLASSES_ROOT\\SystemFileAssociations\\.pdf\\shell\\pdf2zh_google\\command\" /ve /d '$dir\\venv\\Scripts\\pdf2zh.exe --google --no-mono \\\"%1\\\"' /f"
     ],
     "installer": {
         "script": [

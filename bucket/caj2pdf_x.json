@@ -1,0 +1,23 @@
+{
+    "version": "0.1",
+    "description": "caj2pdf: 将知网caj文件转换为pdf",
+    "homepage": "https://github.com/caj2pdf/caj2pdf/",
+    "notes": [
+        "Use caj2pdf :  $dir\\venv\\Scripts\\python $dir\\caj2pdf convert <caj-file>",
+        "Add context menu option: ",
+        "- reg add \"HKEY_CLASSES_ROOT\\SystemFileAssociations\\.caj\\shell\\caj2pdf\\command\" /ve /d '$dir\\venv\\Scripts\\python $dir\\caj2pdf convert \\\"%1\\\"' /f"
+    ],
+    "url": "https://github.com/caj2pdf/caj2pdf/archive/refs/heads/master.zip",
+    "extract_dir": "caj2pdf-master",
+    "installer": {
+        "script": [
+            "Write-Host \"`n*** create Python venv by uv ... \" -Foreground Blue ",
+            "uv venv \"$dir\\venv\" ",
+            "Write-Host \"*** activate venv ... \" -Foreground Blue ",
+            "Invoke-Expression -Command \"$dir\\venv\\Scripts\\activate.ps1\" ",
+            "Write-Host \"*** uv pip install pypdf2 ... \" -Foreground Blue ",
+            "uv pip install pypdf2 -i https://pypi.mirrors.ustc.edu.cn/simple ",
+            "Write-Host \"*** $dir\\venv\\Scripts\\python $dir\\caj2pdf --help ... \" -Foreground Blue "
+        ]
+    }
+}

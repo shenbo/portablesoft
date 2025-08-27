@@ -1,0 +1,39 @@
+{
+    "version": "2.5.2",
+    "description": "PDF scientific paper translation with preserved formats",
+    "homepage": "https://github.com/PDFMathTranslate/PDFMathTranslate-next/",
+    "url": "https://github.com/PDFMathTranslate/PDFMathTranslate-next/archive/refs/tags/v2.5.2.zip",
+    "notes": [
+        "The version without assets:  pdf2zh without assets(font, model, etc.)",
+        "It will also dynamically download resources when running`n",
+        "Add context menu option: ",
+        "- reg add \"HKEY_CLASSES_ROOT\\SystemFileAssociations\\.pdf\\shell\\pdf2zh_bing\\command\" /ve /d '$dir\\pdf2zh.exe --bing --no-mono \\\"%1\\\"' /f",
+        "- reg add \"HKEY_CLASSES_ROOT\\SystemFileAssociations\\.pdf\\shell\\pdf2zh_google\\command\" /ve /d '$dir\\pdf2zh.exe --google --no-mono \\\"%1\\\"' /f"
+    ],
+    "installer": {
+        "script": [
+            "Write-Host \"`n*** create Python venv by uv ... \" -Foreground Blue ",
+            "uv venv \"$dir\\venv\" ",
+            "Write-Host \"*** activate venv ... \" -Foreground Blue ",
+            "Invoke-Expression -Command \"$dir\\venv\\Scripts\\activate.ps1\" ",
+            "Write-Host \"*** uv pip install pdf2zh-next ... \" -Foreground Blue ",
+            "uv pip install pdf2zh-next -i https://pypi.mirrors.ustc.edu.cn/simple ",
+            "Write-Host \"*** pdf2zh --help ... \" -Foreground Blue "
+        ]
+    },
+    "bin": "venv\\Scripts\\pdf2zh.exe",
+    "shortcuts": [
+        [
+            "venv\\Scripts\\pdf2zh.exe",
+            "pdf2zh"
+        ]
+    ],
+    "checkver": {
+        "url": "https://api.github.com/repos/PDFMathTranslate/PDFMathTranslate-next/releases/latest",
+        "jsonpath": "$..browser_download_url",
+        "regex": "download/v([0-9.]+)/pdf2zh-v[0-9.]+-(?<tag>BabelDOC-v[0-9.]+)-win64.zip"
+    },
+    "autoupdate": {
+        "url": "https://github.com/PDFMathTranslate/PDFMathTranslate-next/archive/refs/tags/v$version.zip"
+    }
+}

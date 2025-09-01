@@ -1,8 +1,8 @@
 {
-    "version": "2.5.2",
+    "version": "2.6.0",
     "description": "PDF scientific paper translation with preserved formats",
     "homepage": "https://github.com/PDFMathTranslate/PDFMathTranslate-next/",
-    "url": "https://github.com/PDFMathTranslate/PDFMathTranslate-next/archive/refs/tags/v2.5.2.zip",
+    "url": "https://github.com/PDFMathTranslate/PDFMathTranslate-next/archive/refs/tags/v2.6.0.zip",
     "notes": [
         "The version without assets:  pdf2zh without assets(font, model, etc.)",
         "It will also dynamically download resources when running`n",

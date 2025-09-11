@@ -15,8 +15,8 @@
     ],
     "url": "https://github.com/nilaoda/N_m3u8DL-RE/releases/download/v0.3.0-beta/N_m3u8DL-RE_v0.3.0-beta_win-x64_20241203.zip",
     "hash": "",
-    "bin": [
-        "N_m3u8DL-RE.exe",
+    "bin": "N_m3u8DL-RE.exe",
+    "shortcuts": [
         [
             "N_m3u8DL-RE.exe",
             "N_m3u8DL_RE"

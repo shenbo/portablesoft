@@ -9,11 +9,11 @@
     ],
     "url": "https://github.com/Proektsoftbg/Calcpad/releases/download/v7.3.8/calcpad-VM-portable-en-x64.zip",
     "hash": "8b1ca8c29cd7358c8cc4eb4ce656d24b7d6690c6656028b7db1621002e828e3c",
-    "bin": [
-        "calcpad.exe",
+    "bin": "Calcpad.exe",
+    "shortcuts": [
         [
-            "calcpad.exe",
-            "calcpad"
+            "Calcpad.exe",
+            "Calcpad"
         ]
     ],
     "extract_dir": "Calcpad-VM-Portable",

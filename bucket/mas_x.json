@@ -1,5 +1,5 @@
 {
-    "version": "3.5",
+    "version": "3.7",
     "description": "Microsoft-Activation-Scripts https://massgrave.dev",
     "homepage": "https://github.com/massgravel/Microsoft-Activation-Scripts",
     "url": "https://github.com/massgravel/Microsoft-Activation-Scripts/archive/heads/master.zip",
@@ -17,7 +17,10 @@
             "MAS_AIO"
         ]
     ],
-    "hash": "",
+    "hash": "52bf123a8efee2491d03b6acc0c43d61a742845c66747bd0998dd26fe7b21fd2",
     "extract_dir": "Microsoft-Activation-Scripts-heads-master\\MAS",
-    "checkver": "github"
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/massgravel/Microsoft-Activation-Scripts/archive/heads/master.zip"
+    }
 }

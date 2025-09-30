@@ -1,0 +1,18 @@
+{
+    "version": "0.13.1",
+    "description": "The new foundation for documents. Limitless power to write, create, and automate anything that you can fit on a page..",
+    "homepage": "https://github.com/typst/typst/",
+    "license": "MIT",
+    "notes": [
+        "https://github.com/typst/typst/",
+        "VS Code Extension: https://marketplace.visualstudio.com/items?itemName=Tinymist.typst"
+    ],
+    "url": "https://github.com/typst/typst/releases/download/v0.13.1/typst-x86_64-pc-windows-msvc.zip",
+    "hash": "",
+    "bin": "typst",
+    "extract_dir": "typst",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/typst/typst/releases/download/$version/typst-x86_64-pc-windows-msvc.zip"
+    }
+}

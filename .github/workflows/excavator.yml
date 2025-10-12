@@ -15,3 +15,22 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         SKIP_UPDATED: '1'
+
+    - name: 7. setup python...
+      run: |
+        scoop install python
+        python -m pip install requests
+
+    - name: 8. send commit log to wework ...
+      env:
+        CORP_ID: ${{ secrets.CORP_ID }}
+        CORP_SECRET: ${{ secrets.CORP_SECRET }}
+        AGENT_ID: ${{ secrets.AGENT_ID }}
+
+      run: |
+        echo -e "commit log:\n" > commit_log.md
+        echo -e "$(git show -$env:GH_REQUEST_COUNTER --stat)" >> commit_log.md
+        echo -e "\nhttps://shenbo.github.io" >> commit_log.md
+        log=$(cat commit_log.md)
+
+        python wechat_push.py

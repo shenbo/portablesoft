@@ -1,5 +1,5 @@
 {
-    "version": "7.3.8",
+    "version": "7.4.1",
     "description": "Free and open source software for mathematical and engineering calculations.",
     "homepage": "https://github.com/Proektsoftbg/Calcpad/",
     "license": "MIT",
@@ -7,8 +7,8 @@
         "https://github.com/Proektsoftbg/Calcpad",
         "The software requires a 64 bit computer with Windows 10/11 and Microsoft .NET 8.0."
     ],
-    "url": "https://github.com/Proektsoftbg/Calcpad/releases/download/v7.3.8/calcpad-VM-portable-en-x64.zip",
-    "hash": "8b1ca8c29cd7358c8cc4eb4ce656d24b7d6690c6656028b7db1621002e828e3c",
+    "url": "https://github.com/Proektsoftbg/Calcpad/releases/download/v7.4.1/calcpad-VM-portable-en-x64.zip",
+    "hash": "35c2069854683a9d2623629dc60c11b71e16e1f96a81f8beadb4450e6cb2caaf",
     "bin": "Calcpad.exe",
     "shortcuts": [
         [
@@ -19,6 +19,6 @@
     "extract_dir": "Calcpad-VM-Portable",
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/Proektsoftbg/Calcpad/releases/download/$version/calcpad-VM-portable-en-x64.zip"
+        "url": "https://github.com/Proektsoftbg/Calcpad/releases/download/v$version/calcpad-VM-portable-en-x64.zip"
     }
 }

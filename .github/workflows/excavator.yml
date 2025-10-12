@@ -28,7 +28,7 @@ jobs:
         AGENT_ID: ${{ secrets.AGENT_ID }}
 
       run: |
-        git log --since="1 hours ago" > commit_log.md
+        git log --since="1 hours ago" --pretty=format:"%ai %h %n%s%n" --name-status > commit_log.md
 
         python -m pip install requests
 

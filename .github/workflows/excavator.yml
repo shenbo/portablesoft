@@ -17,9 +17,9 @@ jobs:
         SKIP_UPDATED: '1'
 
     - name: 7. setup python...
-      run: |
-        scoop install python
-        python -m pip install requests
+      uses: actions/setup-python@v6
+      with:
+        python-version: '3.13'
 
     - name: 8. send commit log to wework ...
       env:
@@ -32,5 +32,7 @@ jobs:
         echo -e "$(git show -$env:GH_REQUEST_COUNTER --stat)" >> commit_log.md
         echo -e "\nhttps://shenbo.github.io" >> commit_log.md
         log=$(cat commit_log.md)
+
+        python -m pip install requests
 
         python wechat_push.py

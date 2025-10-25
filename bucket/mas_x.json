@@ -17,7 +17,7 @@
             "MAS_AIO"
         ]
     ],
-    "hash": "52bf123a8efee2491d03b6acc0c43d61a742845c66747bd0998dd26fe7b21fd2",
+    "hash": "cf9e06b6106670d0cf2146c4ca18dd869f2d6ed8e099aa4210ef9b3ca6e95f30",
     "extract_dir": "Microsoft-Activation-Scripts-heads-master\\MAS",
     "checkver": "github",
     "autoupdate": {

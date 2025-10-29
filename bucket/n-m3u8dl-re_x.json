@@ -1,5 +1,5 @@
 {
-    "version": "v0.5.0-beta",
+    "version": "v0.5.1-beta",
     "description": "Cross-Platform, modern and powerful stream downloader for MPD/M3U8/ISM",
     "homepage": "https://github.com/nilaoda/N_m3u8DL-RE",
     "license": "MIT",
@@ -13,7 +13,7 @@
         "Register 'm3u8dl://' Url Protocol, https://github.com/xifangczy/URLProtocol",
         "https://github.com/nilaoda/N_m3u8DL-RE/releases/download/v0.3.0-beta/N_m3u8DL-RE_v0.3.0-beta_win-x64_20241203.zip"
     ],
-    "url": "https://github.com/nilaoda/N_m3u8DL-RE/releases/download/v0.5.0-beta/N_m3u8DL-RE_v0.5.0-beta_win-x64_20251027.zip",
+    "url": "https://github.com/nilaoda/N_m3u8DL-RE/releases/download/v0.5.1-beta/N_m3u8DL-RE_v0.5.1-beta_win-x64_20251029.zip",
     "hash": "",
     "bin": "N_m3u8DL-RE.exe",
     "shortcuts": [

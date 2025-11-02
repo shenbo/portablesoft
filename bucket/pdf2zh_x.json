@@ -7,25 +7,25 @@
         "The version without assets:  pdf2zh without assets(font, model, etc.)",
         "It will also dynamically download resources when running`n",
         "Add context menu option: ",
-        "- reg add \"HKEY_CLASSES_ROOT\\SystemFileAssociations\\.pdf\\shell\\pdf2zh_bing\\command\" /ve /d '$dir\\venv\\Scripts\\pdf2zh.exe --bing --no-mono \\\"%1\\\"' /f",
-        "- reg add \"HKEY_CLASSES_ROOT\\SystemFileAssociations\\.pdf\\shell\\pdf2zh_google\\command\" /ve /d '$dir\\venv\\Scripts\\pdf2zh.exe --google --no-mono \\\"%1\\\"' /f"
+        "- reg add \"HKEY_CLASSES_ROOT\\SystemFileAssociations\\.pdf\\shell\\pdf2zh_bing\\command\" /ve /d '$dir\\.venv\\Scripts\\pdf2zh.exe --siliconflow --no-mono \\\"%1\\\"' /f",
+        "- reg delete \"HKEY_CLASSES_ROOT\\SystemFileAssociations\\.pdf\\shell\\pdf2zh\" "
     ],
     "installer": {
         "script": [
             "Write-Host \"`n*** create Python venv by uv ... \" -Foreground Blue ",
-            "uv venv \"$dir\\venv\" ",
+            "uv venv --python=3.13 \"$dir\\.venv\" ",
             "Write-Host \"*** activate venv ... \" -Foreground Blue ",
-            "Invoke-Expression -Command \"$dir\\venv\\Scripts\\activate.ps1\" ",
+            "Invoke-Expression -Command \"$dir\\.venv\\Scripts\\activate.ps1\" ",
             "Write-Host \"*** uv pip install pdf2zh-next ... \" -Foreground Blue ",
             "uv pip install pdf2zh-next -i https://pypi.mirrors.ustc.edu.cn/simple ",
             "Write-Host \"*** pdf2zh --help ... \" -Foreground Blue "
         ]
     },
     "hash": "1cdfea6312900463f4e6a19d3b077c2b7e8583be8b608349d626d27df060aad8",
-    "bin": "venv\\Scripts\\pdf2zh.exe",
+    "bin": ".venv\\Scripts\\pdf2zh.exe",
     "shortcuts": [
         [
-            "venv\\Scripts\\pdf2zh.exe",
+            ".venv\\Scripts\\pdf2zh.exe",
             "pdf2zh"
         ]
     ],

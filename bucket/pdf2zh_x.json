@@ -1,8 +1,8 @@
 {
-    "version": "2.7.0",
+    "version": "2.7.1",
     "description": "PDF scientific paper translation with preserved formats",
     "homepage": "https://github.com/PDFMathTranslate/PDFMathTranslate-next/",
-    "url": "https://github.com/PDFMathTranslate/PDFMathTranslate-next/archive/refs/tags/v2.7.0.zip",
+    "url": "https://github.com/PDFMathTranslate/PDFMathTranslate-next/archive/refs/tags/v2.7.1.zip",
     "notes": [
         "The version without assets:  pdf2zh without assets(font, model, etc.)",
         "It will also dynamically download resources when running`n",
@@ -21,7 +21,7 @@
             "Write-Host \"*** pdf2zh --help ... \" -Foreground Blue "
         ]
     },
-    "hash": "45144cac0d6f897de0856e97037930826d847140dd383ba63050af611eee7e89",
+    "hash": "719e9546045367416fa363552d34986a13461d1cfd3fc371fd0822b01601f659",
     "bin": ".venv\\Scripts\\pdf2zh.exe",
     "shortcuts": [
         [

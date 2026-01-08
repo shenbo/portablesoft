@@ -8,7 +8,7 @@
         "The software requires a 64 bit computer with Windows 10/11 and Microsoft .NET 8.0."
     ],
     "url": "https://github.com/Proektsoftbg/Calcpad/releases/download/v7.5.8/calcpad-VM-portable-en-x64.zip",
-    "hash": "f166320f06c14659ddcb25b63ab8f6e715ebd6c4b01b830653a6914ccc2d1960",
+    "hash": "sha256:cb0965c5f03725be22feb5985681cc5525de607be719a8fd2833ad59c1eed865",
     "bin": "Calcpad.exe",
     "shortcuts": [
         [

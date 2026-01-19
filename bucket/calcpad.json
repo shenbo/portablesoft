@@ -1,5 +1,5 @@
 {
-    "version": "7.5.8",
+    "version": "7.5.9",
     "description": "Free and open source software for mathematical and engineering calculations.",
     "homepage": "https://github.com/Proektsoftbg/Calcpad/",
     "license": "MIT",
@@ -7,8 +7,8 @@
         "https://github.com/Proektsoftbg/Calcpad",
         "The software requires a 64 bit computer with Windows 10/11 and Microsoft .NET 8.0."
     ],
-    "url": "https://github.com/Proektsoftbg/Calcpad/releases/download/v7.5.8/calcpad-VM-portable-en-x64.zip",
-    "hash": "sha256:cb0965c5f03725be22feb5985681cc5525de607be719a8fd2833ad59c1eed865",
+    "url": "https://github.com/Proektsoftbg/Calcpad/releases/download/v7.5.9/calcpad-VM-portable-en-x64.zip",
+    "hash": "dc3dea1e533bc64acbccb370675832e9fd7821b0940a1a8ebaa2ba52f52e0aa3",
     "bin": "Calcpad.exe",
     "shortcuts": [
         [

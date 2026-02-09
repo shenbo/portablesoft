@@ -1,8 +1,8 @@
 {
-    "version": "2.7.1",
+    "version": "2.8.2",
     "description": "PDF scientific paper translation with preserved formats",
-    "homepage": "https://github.com/PDFMathTranslate/PDFMathTranslate-next/",
-    "url": "https://github.com/PDFMathTranslate/PDFMathTranslate-next/archive/refs/tags/v2.7.1.zip",
+    "homepage": "https://github.com/PDFMathTranslate-next/PDFMathTranslate-next/",
+    "url": "https://github.com/PDFMathTranslate-next/PDFMathTranslate-next/archive/refs/tags/v2.8.2.zip",
     "notes": [
         "The version without assets:  pdf2zh without assets(font, model, etc.)",
         "It will also dynamically download resources when running`n",
@@ -21,7 +21,7 @@
             "Write-Host \"*** pdf2zh --help ... \" -Foreground Blue "
         ]
     },
-    "hash": "719e9546045367416fa363552d34986a13461d1cfd3fc371fd0822b01601f659",
+    "hash": "cb5761fd286adce1c9002d811648262d6d9b0e285812b278d360150a843f7bb4",
     "bin": ".venv\\Scripts\\pdf2zh.exe",
     "shortcuts": [
         [
@@ -30,11 +30,11 @@
         ]
     ],
     "checkver": {
-        "url": "https://api.github.com/repos/PDFMathTranslate/PDFMathTranslate-next/releases/latest",
+        "url": "https://api.github.com/repos/PDFMathTranslate-next/PDFMathTranslate-next/releases/latest",
         "jsonpath": "$..browser_download_url",
         "regex": "download/v([0-9.]+)/pdf2zh-v[0-9.]+-(?<tag>BabelDOC-v[0-9.]+)-win64.zip"
     },
     "autoupdate": {
-        "url": "https://github.com/PDFMathTranslate/PDFMathTranslate-next/archive/refs/tags/v$version.zip"
+        "url": "https://github.com/PDFMathTranslate-next/PDFMathTranslate-next/archive/refs/tags/v$version.zip"
     }
 }

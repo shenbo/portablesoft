@@ -1,8 +1,8 @@
 {
-    "version": "3.0.9",
+    "version": "3.1.0",
     "description": "MinerU: A high-quality tool for convert PDF to Markdown and JSON.",
     "homepage": "https://github.com/opendatalab/MinerU",
-    "url": "https://github.com/opendatalab/MinerU/archive/refs/tags/mineru-3.0.9-released.zip",
+    "url": "https://github.com/opendatalab/MinerU/archive/refs/tags/mineru-3.1.0-released.zip",
     "notes": [
         "- home: https://github.com/opendatalab/MinerU ",
         "- help: mineru -h ",
@@ -36,7 +36,7 @@
             "pdfrenamer"
         ]
     ],
-    "hash": "8be08dc3eaade8311dec669643a4489653868c1e1b953c02b5c9d78a709d863f",
+    "hash": "9bc6a9c550280ce63eba10bc5f6c0cf298b757ba7199e70713b95a00cdfe5a95",
     "checkver": {
         "url": "https://api.github.com/repos/opendatalab/MinerU/releases/latest",
         "jsonpath": "$.tag_name",

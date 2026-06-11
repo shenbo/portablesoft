@@ -6,11 +6,11 @@
     "notes": [
         "https://github.com/wood3n/biu"
     ],
-    "url": "https://github.com/wood3n/biu/releases/download/v1.16.0/Biu-1.16.0-win-setup-x64.exe",
-    "hash": "354949812b1b1e6f7fb8d9e096d9925d9564022e054516319b0fb37013519a72",
+    "url": "https://github.com/wood3n/biu/releases/download/v1.16.0/Biu-1.16.0-win-portable-x64.exe",
+    "hash": "",
     "installer": {
         "script": [
-            "Get-ChildItem \"$dir\" -Filter \"Biu-*-win-setup-x64.exe\" | ForEach-Object {",
+            "Get-ChildItem \"$dir\" -Filter \"Biu-*-win-portable-x64.exe\" | ForEach-Object {",
             "    write-host \" *\" $_.FullName -Foreground Yellow",
             "    Rename-Item $_.FullName -NewName \"Biu.exe\"",
             "}"
@@ -25,6 +25,6 @@
     ],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/wood3n/biu/releases/download/v$version/Biu-$version-win-setup-x64.exe"
+        "url": "https://github.com/wood3n/biu/releases/download/v$version/Biu-$version-win-portable-x64.exe"
     }
 }

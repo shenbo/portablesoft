@@ -1,0 +1,30 @@
+{
+    "version": "1.16.0",
+    "description": "Bilibili音乐播放器",
+    "homepage": "https://github.com/wood3n/biu",
+    "license": "PolyForm Noncommercial License 1.0.0",
+    "notes": [
+        "https://github.com/wood3n/biu"
+    ],
+    "url": "https://github.com/wood3n/biu/releases/download/v1.16.0/Biu-1.16.0-win-setup-x64.exe",
+    "hash": "354949812b1b1e6f7fb8d9e096d9925d9564022e054516319b0fb37013519a72",
+    "installer": {
+        "script": [
+            "Get-ChildItem \"$dir\" -Filter \"Biu-*-win-setup-x64.exe\" | ForEach-Object {",
+            "    write-host \" *\" $_.FullName -Foreground Yellow",
+            "    Rename-Item $_.FullName -NewName \"Biu.exe\"",
+            "}"
+        ]
+    },
+    "bin": "Biu.exe",
+    "shortcuts": [
+        [
+            "Biu.exe",
+            "Biu"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/wood3n/biu/releases/download/v$version/Biu-$version-win-setup-x64.exe"
+    }
+}

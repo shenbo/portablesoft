@@ -1,18 +1,19 @@
 {
-    "version": "1.2304.77",
+    "version": "1.2304.79",
     "description": "JetBrains Maple Mono: The free and open-source font fused with JetBrains Mono & Maple Mono",
     "homepage": "https://github.com/SpaceTimee/Fusion-JetBrainsMapleMono",
     "license": "MIT",
-    "url": "https://github.com/SpaceTimee/Fusion-JetBrainsMapleMono/releases/download/1.2304.77/JetBrainsMapleMono-NF-XX-XX.zip",
+    "url": "https://github.com/SpaceTimee/Fusion-JetBrainsMapleMono/releases/download/1.2304.79/JetBrainsMapleMono-NF-XX-XX-XX.zip",
     "notes": [
-        "JetBrainsMapleMono-[NF/XX]-[NR/XX]-[HT/XX].zip ",
+        "JetBrainsMapleMono-[NF/XX]-[NR/XX]-[NL/XX]-[HT/XX].zip ",
         "- NF: Nerd Font",
         "- NR: CN Narrow",
+        "- NL: No Ligatures",
         "- HT: Hinted",
         "",
         "vscode config: 'Jetbrains Maple Mono', 'Courier New', monospace "
     ],
-    "hash": "6448c222b40bcee2ea2240e76c1016deb89e975adf1859ed915eb5964329b3a5",
+    "hash": "35746c52359504ee5008f39bf2f30c676fd3632f74bc2b469d400f52d541419f",
     "installer": {
         "script": [
             "Write-Host \"`nRename fonts file ...\" -Foreground Magenta",
@@ -41,6 +42,6 @@
     },
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/SpaceTimee/Fusion-JetBrainsMapleMono/releases/download/$version/JetBrainsMapleMono-NF-XX-XX.zip"
+        "url": "https://github.com/SpaceTimee/Fusion-JetBrainsMapleMono/releases/download/$version/JetBrainsMapleMono-NF-XX-XX-XX.zip"
     }
 }

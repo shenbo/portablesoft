@@ -1,10 +1,10 @@
 {
-    "version": "2.0.0.3",
+    "version": "3.2.3.1",
     "description": "PixPin",
     "homepage": "https://pixpin.cn/",
     "license": "MIT",
     "notes": "pixpin",
-    "url": "https://download.pixpinapp.com/PixPin_2.0.0.3.zip",
+    "url": "https://download.pixpinapp.com/PixPin_3.2.3.1.zip",
     "hash": "",
     "bin": "pixpin.exe",
     "shortcuts": [
@@ -15,7 +15,7 @@
     ],
     "extract_dir": "pixpin",
     "checkver": {
-        "url": "https://pixpin.cn/",
+        "url": "https://pixpin.cn/docs/",
         "regex": "docs/official-log/([\\d.]+)"
     },
     "autoupdate": {

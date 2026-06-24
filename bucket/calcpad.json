@@ -1,24 +1,31 @@
 {
-    "version": "7.6.2",
+    "version": "7.6.4",
     "description": "Free and open source software for mathematical and engineering calculations.",
-    "homepage": "https://github.com/Proektsoftbg/Calcpad/",
+    "homepage": "https://github.com/imartincei/CalcpadCE/",
     "license": "MIT",
     "notes": [
-        "https://github.com/Proektsoftbg/Calcpad",
+        "https://github.com/imartincei/CalcpadCE",
         "The software requires a 64 bit computer with Windows 10/11 and Microsoft .NET 8.0."
     ],
-    "url": "https://github.com/Proektsoftbg/Calcpad/releases/download/v7.6.2/calcpad-VM-portable-en-x64.zip",
-    "hash": "b65b448b680ce9168f7ff23281c323b34eb65ba073ce7513f9e851937a5f2356",
-    "bin": "Calcpad.exe",
+    "url": "https://github.com/imartincei/CalcpadCE/releases/download/v7.6.4/CalcpadCE-portable-7.6.4.zip",
+    "hash": "b6d71a96ed06bd10a3c780d880e247a358980ecb89d1becc9df884e81ee740c2",
+    "bin": "CalcpadCE.exe",
     "shortcuts": [
         [
-            "Calcpad.exe",
-            "Calcpad"
+            "CalcpadCE.exe",
+            "CalcpadCE"
         ]
     ],
-    "extract_dir": "Calcpad-VM-Portable",
+    "installer": {
+        "script": [
+            "Get-ChildItem \"$dir\\CalcpadCE-portable-$version\" | ForEach-Object {",
+            "    write-host \" *\" $_.FullName -Foreground Yellow",
+            "    Copy-Item $_.FullName -Destination \"$dir\" -Force",
+            "}"
+        ]
+    },
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/Proektsoftbg/Calcpad/releases/download/v$version/calcpad-VM-portable-en-x64.zip"
+        "url": "https://github.com/imartincei/CalcpadCE/releases/download/v$version/CalcpadCE-portable-$version.zip"
     }
 }

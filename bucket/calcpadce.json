@@ -1,0 +1,31 @@
+{
+    "version": "7.6.4",
+    "description": "Free and open source software for mathematical and engineering calculations.",
+    "homepage": "https://github.com/imartincei/CalcpadCE/",
+    "license": "MIT",
+    "notes": [
+        "https://github.com/imartincei/CalcpadCE",
+        "The software requires a 64 bit computer with Windows 10/11 and Microsoft .NET 8.0."
+    ],
+    "url": "https://github.com/imartincei/CalcpadCE/releases/download/v7.6.4/CalcpadCE-portable-7.6.4.zip",
+    "hash": "b6d71a96ed06bd10a3c780d880e247a358980ecb89d1becc9df884e81ee740c2",
+    "bin": "CalcpadCE.exe",
+    "shortcuts": [
+        [
+            "CalcpadCE.exe",
+            "CalcpadCE"
+        ]
+    ],
+    "installer": {
+        "script": [
+            "Get-ChildItem \"$dir\\CalcpadCE-portable-$version\" | ForEach-Object {",
+            "    write-host \" *\" $_.FullName -Foreground Yellow",
+            "    Copy-Item $_.FullName -Destination \"$dir\" -Force",
+            "}"
+        ]
+    },
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/imartincei/CalcpadCE/releases/download/v$version/CalcpadCE-portable-$version.zip"
+    }
+}

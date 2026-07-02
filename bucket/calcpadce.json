@@ -18,10 +18,7 @@
     ],
     "installer": {
         "script": [
-            "Get-ChildItem \"$dir\\CalcpadCE-portable-$version\" | ForEach-Object {",
-            "    write-host \" *\" $_.FullName -Foreground Yellow",
-            "    Copy-Item $_.FullName -Destination \"$dir\" -Force",
-            "}"
+            "Move-Item -Path \"$dir\\CalcpadCE-portable-$version\\*\" -Destination \"$dir\""
         ]
     },
     "checkver": "github",

@@ -1,10 +1,10 @@
 {
-    "version": "3.2.3.1",
+    "version": "3.3.5.7",
     "description": "PixPin",
     "homepage": "https://pixpin.cn/",
     "license": "MIT",
     "notes": "pixpin",
-    "url": "https://download.pixpinapp.com/PixPin_3.2.3.1.zip",
+    "url": "https://download.pixpinapp.com/PixPin_3.3.5.7.zip",
     "hash": "",
     "bin": "pixpin.exe",
     "shortcuts": [

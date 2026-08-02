@@ -13,11 +13,12 @@
         "",
         "vscode config: 'Jetbrains Maple Mono', 'Courier New', monospace "
     ],
-    "hash": "35746c52359504ee5008f39bf2f30c676fd3632f74bc2b469d400f52d541419f",
+    "hash": "",
     "installer": {
         "script": [
             "Write-Host \"`nRename fonts file ...\" -Foreground Magenta",
             "$fontInstallDir = \"$env:LOCALAPPDATA\\Microsoft\\Windows\\Fonts\"",
+            "New-Item -ItemType Directory -Path $fontInstallDir -Force | Out-Null",
             "$registryKey = \"HKCU:\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Fonts\"",
             "Write-host \"Installing fonts for current user\" -Foreground Magenta",
             "Write-host \"- Move *.ttf to \" $fontInstallDir",

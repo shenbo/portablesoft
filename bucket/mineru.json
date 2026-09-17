@@ -1,15 +1,12 @@
 {
-    "version": "3.4.5",
+    "version": "4.0.0",
     "description": "MinerU: A high-quality tool for convert PDF to Markdown and JSON.",
     "homepage": "https://github.com/opendatalab/MinerU",
-    "url": "https://github.com/opendatalab/MinerU/archive/refs/tags/mineru-3.4.5-released.zip",
+    "url": "https://github.com/opendatalab/MinerU/releases/download/mineru-4.0.0-released/mineru-4.0.0-py3-none-any.whl",
     "notes": [
         "- home: https://github.com/opendatalab/MinerU ",
-        "- help: mineru -h ",
-        "- model: mineru-models-download -s modelscope -m pipeline ",
-        "- model path: ~\\.cache\\modelscope\\hub\\models ",
-        "- model config: ~\\mineru.json ",
-        "- usage: mineru -d cpu --source local -o . -p 123.pdf "
+        "- usage: mineru-kit parse document.pdf -o document.md --tier standard ",
+        "-        mineru-kit webui "
     ],
     "installer": {
         "script": [
@@ -18,31 +15,24 @@
             "Write-Host \"*** activate venv ... \" -Foreground Blue ",
             "Invoke-Expression -Command \"$dir\\.venv\\Scripts\\activate.ps1\" ",
             "Write-Host \"*** uv pip install MinerU ... \" -Foreground Blue",
-            "uv pip install \"mineru[core]\" -i https://pypi.mirrors.ustc.edu.cn/simple ",
-            "Write-Host \"*** mineru --help ... \" -Foreground Blue "
+            "uv pip install mineru -i https://pypi.mirrors.ustc.edu.cn/simple ",
+            "Write-Host \"*** mineru-kit ... \" -Foreground Blue "
         ]
     },
-    "bin": [
-        ".venv\\Scripts\\mineru.exe",
-        ".venv\\Scripts\\mineru-models-download.exe"
-    ],
+    "bin": ".venv\\Scripts\\mineru-kit.exe",
     "shortcuts": [
         [
-            ".venv\\Scripts\\mineru.exe",
-            "pdfrenamer"
-        ],
-        [
-            ".venv\\Scripts\\mineru-models-download.exe",
-            "pdfrenamer"
+            ".venv\\Scripts\\mineru-kit.exe",
+            "mineru-kit"
         ]
     ],
-    "hash": "55273854835a062c7d1e236a4485960fe6a67a6cbfd73abb8fc00f888556dff3",
+    "hash": "e128d552eb395d4f96368b865838f3daf6f1d68df91066e00a134712965d92ec",
     "checkver": {
         "url": "https://api.github.com/repos/opendatalab/MinerU/releases/latest",
         "jsonpath": "$.tag_name",
         "regex": "mineru-(?<version>[\\d.]+)-released"
     },
     "autoupdate": {
-        "url": "https://github.com/opendatalab/MinerU/archive/refs/tags/mineru-$version-released.zip"
+        "url": "https://github.com/opendatalab/MinerU/releases/download/mineru-$version-released/mineru-$version-py3-none-any.whl"
     }
 }

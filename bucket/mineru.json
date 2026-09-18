@@ -15,7 +15,7 @@
             "Write-Host \"*** activate venv ... \" -Foreground Blue ",
             "Invoke-Expression -Command \"$dir\\.venv\\Scripts\\activate.ps1\" ",
             "Write-Host \"*** uv pip install MinerU ... \" -Foreground Blue",
-            "uv pip install mineru -i https://pypi.mirrors.ustc.edu.cn/simple ",
+            "uv pip install mineru[torch] -i https://pypi.mirrors.ustc.edu.cn/simple ",
             "Write-Host \"*** mineru-kit ... \" -Foreground Blue "
         ]
     },

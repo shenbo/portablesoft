@@ -4,9 +4,26 @@
     "homepage": "https://github.com/opendatalab/MinerU",
     "url": "https://github.com/opendatalab/MinerU/releases/download/mineru-4.0.12-released/mineru-4.0.12-py3-none-any.whl",
     "notes": [
-        "- home: https://github.com/opendatalab/MinerU ",
-        "- usage: mineru-kit parse document.pdf -o document.md --tier standard ",
-        "-        mineru-kit webui "
+        "https://github.com/opendatalab/MinerU ",
+        "- usage webui: ",
+        "$ mineru-kit webui ",
+        "",
+        "- usage command: ",
+        "$ mineru-kit parse document.pdf -o document.md -p 1-10 --tier standard ",
+        "",
+        "- usage command help: ",
+        "$ mineru-kit parse --help",
+        "*    inputs            <str> ",
+        "*    --outputs   -o    <str>     [required] ",
+        "-    --pages     -p    <str>     pages: '1-5,8'、'r3-r1'(reverse) or 'all' [default:all] ",
+        "-    --format    -f    <str>     oputput fomate: markdown、middle_json、zip [default: markdown] ",
+        "-    --verbose   -v              detail log info [default: False] ",
+        "-    --tier            <str>     level: flash、basic、standard、advanced ", 
+        "-    --remote                    use mineru.net reomote service ",
+        "-    --remote-url      <str>     reomote service URL ",
+        "-    --api-key         <str>     reomote service API key ",
+        "-    --ocr-mode        <str>     OCR mode: auto、txt、ocr [default: auto] ", 
+        "-    --disable-image-analysis    disable image analysis [default: False] "
     ],
     "installer": {
         "script": [

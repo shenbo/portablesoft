@@ -1,8 +1,8 @@
 {
-    "version": "4.0.12",
+    "version": "4.1.2",
     "description": "MinerU: A high-quality tool for convert PDF to Markdown and JSON.",
     "homepage": "https://github.com/opendatalab/MinerU",
-    "url": "https://github.com/opendatalab/MinerU/releases/download/mineru-4.0.12-released/mineru-4.0.12-py3-none-any.whl",
+    "url": "https://github.com/opendatalab/MinerU/releases/download/mineru-4.1.2-released/mineru-4.1.2-py3-none-any.whl",
     "notes": [
         "https://github.com/opendatalab/MinerU ",
         "- usage webui: ",
@@ -18,11 +18,11 @@
         "-    --pages     -p    <str>     pages: '1-5,8'、'r3-r1'(reverse) or 'all' [default:all] ",
         "-    --format    -f    <str>     oputput fomate: markdown、middle_json、zip [default: markdown] ",
         "-    --verbose   -v              detail log info [default: False] ",
-        "-    --tier            <str>     level: flash、basic、standard、advanced ", 
+        "-    --tier            <str>     level: flash、basic、standard、advanced ",
         "-    --remote                    use mineru.net reomote service ",
         "-    --remote-url      <str>     reomote service URL ",
         "-    --api-key         <str>     reomote service API key ",
-        "-    --ocr-mode        <str>     OCR mode: auto、txt、ocr [default: auto] ", 
+        "-    --ocr-mode        <str>     OCR mode: auto、txt、ocr [default: auto] ",
         "-    --disable-image-analysis    disable image analysis [default: False] "
     ],
     "installer": {
@@ -43,7 +43,7 @@
             "mineru-kit"
         ]
     ],
-    "hash": "a3ff8582a4608eb1f4dde55800ac156d59b01ceabd2ab4002bdf8e86306b1eab",
+    "hash": "d0cf1ac0dc90766d59833f47c9852d6a732a4ce106cf16931a62a5d55067c6cf",
     "checkver": {
         "url": "https://api.github.com/repos/opendatalab/MinerU/releases/latest",
         "jsonpath": "$.tag_name",

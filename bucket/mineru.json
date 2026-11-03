@@ -1,8 +1,8 @@
 {
-    "version": "4.1.3",
+    "version": "4.1.4",
     "description": "MinerU: A high-quality tool for convert PDF to Markdown and JSON.",
     "homepage": "https://github.com/opendatalab/MinerU",
-    "url": "https://github.com/opendatalab/MinerU/releases/download/mineru-4.1.3-released/mineru-4.1.3-py3-none-any.whl",
+    "url": "https://github.com/opendatalab/MinerU/releases/download/mineru-4.1.4-released/mineru-4.1.4-py3-none-any.whl",
     "notes": [
         "https://github.com/opendatalab/MinerU ",
         "- usage webui: ",
@@ -43,7 +43,7 @@
             "mineru-kit"
         ]
     ],
-    "hash": "cd077510ccd259e034832c9c704aa85ce8c34f1e286323574d4c08b8cbf7420a",
+    "hash": "15b5c70ce8f48f1532eca5ebf7f610ad7cab677c16f571190667f69aadeb4a8c",
     "checkver": {
         "url": "https://api.github.com/repos/opendatalab/MinerU/releases/latest",
         "jsonpath": "$.tag_name",

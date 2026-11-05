@@ -1,0 +1,18 @@
+{
+    "version": "2.3.0b20250923",
+    "description": "Ollama 英特尔优化版",
+    "homepage": "https://www.modelscope.cn/models/intel/ollama/",
+    "license": "Apache License 2.0",
+    "notes": [
+        "https://www.modelscope.cn/models/intel/ollama/"
+    ],
+    "url": "https://www.modelscope.cn/models/intel/ollama/file/view/master/ollama-intel-2.3.0b20250923-win.zip",
+    "hash": "",
+    "bin": "ollama.exe",
+    "shortcuts": [
+        [
+            "ollama.exe",
+            "ollama"
+        ]
+    ]
+}

@@ -4,15 +4,13 @@
     "homepage": "https://github.com/DanWBR/dwsim10/",
     "url": "https://github.com/DanWBR/dwsim10/releases/download/v10.2.14/dwsim-10.2.14-win-x64.zip",
     "notes": "   https://github.com/DanWBR/dwsim10/releases/",
-    "bin": "DWSIM.exe",
+    "bin": "DWSIM.UI.Desktop.Avalonia.exe",
     "shortcuts": [
         [
-            "DWSIM.exe",
+            "DWSIM.UI.Desktop.Avalonia.exe",
             "DWSIM"
         ]
     ],
-    "hash": "ec907567795b22050d79516aa4f0a6b81665c1c32b044f7cda0a8db27578279b",
-    "extract_dir": "Windows",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/DanWBR/dwsim10/releases/download/v$version/dwsim-$version-win-x64.zip"
